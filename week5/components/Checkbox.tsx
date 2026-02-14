@@ -6,7 +6,7 @@ interface CheckboxProps {
   checked: boolean;
   onPress: () => void;
   error?: string;
-  touched: boolean;
+  touched?: boolean;
 }
 
 export default function Checkbox({
@@ -16,27 +16,22 @@ export default function Checkbox({
   error,
   touched,
 }: CheckboxProps) {
-  const hasError = touched && error;
-
   return (
-    <View className="mb-4">
+    <View className="mt-4">
       <Pressable onPress={onPress} className="flex-row items-center">
         <View
-          className={`
-            w-5 h-5 mr-3 rounded border-2 items-center justify-center
-            ${checked ? "bg-blue-600 border-blue-600" : "border-gray-400"}
-          `}
+          className={`w-5 h-5 mr-3 border-2 rounded justify-center items-center ${
+            checked ? "bg-blue-600 border-blue-600" : "border-gray-400"
+          }`}
         >
-          {checked && <Text className="text-white text-xs">✓</Text>}
+          {checked && <View className="w-2 h-2 bg-white rounded-sm" />}
         </View>
 
-        <Text className="text-gray-800 text-sm">{label}</Text>
+        <Text className="text-gray-700">{label}</Text>
       </Pressable>
 
-      {hasError && (
-        <Text className="text-red-500 text-sm mt-1">
-          {error}
-        </Text>
+      {touched && error && (
+        <Text className="text-red-500 text-sm mt-1">{error}</Text>
       )}
     </View>
   );
