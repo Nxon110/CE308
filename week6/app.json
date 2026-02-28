@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "week7",
-    "slug": "week7",
+    "name": "week6",
+    "slug": "week6",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "week7",
+    "scheme": "week6",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
