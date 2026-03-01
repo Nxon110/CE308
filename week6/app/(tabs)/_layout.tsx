@@ -6,7 +6,7 @@ export default function TabLayout() {
     return (
         <Tabs
             screenOptions={{
-                tabBarActiveTintColor: '#FF69B4',
+                tabBarActiveTintColor: '#FF6600',
                 tabBarInactiveTintColor: '#9CA3AF',
                  tabBarLabelPosition: 'below-icon',
                 tabBarStyle: {
@@ -20,7 +20,7 @@ export default function TabLayout() {
                     
                 },
                 headerStyle: {
-                    backgroundColor: '#FF69B4',
+                    backgroundColor: '#FF6600',
                 },
                 headerTintColor: '#FFFFFF',
                 headerTitleStyle: {

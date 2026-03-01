@@ -15,7 +15,7 @@ export default function RootLayout() {
         options={{
           title: 'Product Details',
           headerStyle: {
-            backgroundColor: '#FF69B4',
+            backgroundColor: '#FF6600',
           },
           headerTintColor: '#FFFFFF',
           headerTitleStyle: {

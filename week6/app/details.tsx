@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 18,
     fontWeight: '600',
-    color: '#FF69B4',
+    color: '#FF6600',
     marginBottom: 15,
   },
   divider: {
